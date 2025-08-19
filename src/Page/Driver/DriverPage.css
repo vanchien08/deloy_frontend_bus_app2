@@ -1,0 +1,73 @@
+.empty-cell {
+  height: 48px;
+}
+
+.trip-cell {
+  background-color: #e0ecef !important;
+  white-space: pre-line;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  font-weight: 500;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #2fa4e7 !important;
+  color: white !important;
+  text-align: center;
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  #print-area,
+  #print-area * {
+    visibility: visible !important;
+  }
+
+  #print-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 9999;
+  }
+
+  .ant-modal-content {
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .ant-modal-header,
+  .ant-modal-footer,
+  .ant-modal-close {
+    display: none !important;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
