@@ -55,7 +55,7 @@ export default function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:8080/identity/auth/token", {
+    fetch("https://deploy-backend-bus-app2.onrender.com/identity/auth/token", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Set the content type to JSON
