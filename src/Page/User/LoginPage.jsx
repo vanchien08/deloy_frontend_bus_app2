@@ -199,7 +199,7 @@ const LoginPage = () => {
     try {
       const { credential } = credentialResponse;
       const response = await axios.post(
-        "http://localhost:8080/api/auth/google",
+        "https://busappfrontendcom.vercel.app/api/auth/google",
         { token: credential }
       );
       console.log(response);
